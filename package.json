@@ -1,0 +1,31 @@
+{
+  "name": "bulk-color-converter",
+  "version": "1.0.0",
+  "description": "Paste a list of HEX color values and get a list of HSL color values ",
+  "author": "Rubén Vara (https://rubenvara.io)",
+  "license": "MIT",
+  "scripts": {
+    "start": "gulp"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-minify": "^3.1.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.2"
+  },
+  "keywords": [
+    "color converter",
+    "vanilla",
+    "javascript",
+    "pug"
+  ],
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ]
+}
