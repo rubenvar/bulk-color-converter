@@ -4,13 +4,13 @@
 
 Paste a list of hex color values, comma separated. Clic 'Convert!'.
 
-Done. 🚀 Take your list of hsl colors and leave.
+Done. 🚀 Take your list of _stylesheet-ready_ hsl colors and leave, nothing else to see here. Well, maybe share it with your friends too! 😊
 
 ### More instructions
 
 Don't paste in special characters, hieroglyphics, plans for building a rocket, or a greasy piece of your lunch.
 
-**Just hex colors**. **Comma separated**.
+**Just hex colors**, **comma separated**.
 
 It accepts lower case and upper case, and you can even leave a space after the comma. Or three.
 
