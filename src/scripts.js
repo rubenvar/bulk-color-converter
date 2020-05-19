@@ -9,7 +9,7 @@ const regex = /^(#)?[a-fA-F0-9]{3}$|^(#)?[a-fA-F0-9]{6}$/;
 function calculateHSL(inp) {
   // first check hex format is right, else return
   const isHex = regex.test(inp);
-  if (!isHex) return console.log(`${inp} not valid (╯°□°）╯︵ ┻━┻`);
+  if (!isHex) return console.error(`${inp} not valid (╯°□°）╯︵ ┻━┻`);
   // strip the #
   const hex = inp.replace('#', '');
   // hex to rgb (add '0x' in front and convert to Int to get decimal from haxdecimals 😉)
@@ -61,6 +61,7 @@ function calculateHSL(inp) {
 button.addEventListener(
   'click',
   () =>
+    // asasa
     (result.value = userInput.value
       // strip commas, spaces, newlines, empty, etc.
       .split(',')

@@ -13,25 +13,28 @@ html(lang="en")
         h1 Bulk convert #hex into hsl()
     main
       .inner
-        textarea#hex(rows="12" placeholder="should be a list of comma separated hex colors")
+        textarea#hex(rows="16" placeholder="should be a list of comma separated hex colors")
         .buttons
           button#convert(type="button") 🧙‍♂️ Convert!
           button#reset(type="button") 💣 Reset
-        textarea#result(rows="12" readonly)
+        textarea#result(rows="16" readonly)
     aside
       .inner
         h2 How it works
-        p Paste a list of hex color values, comma separated.  Clic 'Convert!'.
-        p Done. 🚀 Take your list of hsl colors and leave.
+        p Paste a list of hex color values, comma separated. Clic 'Convert!'.
+        p Done.
+        p 🚀 Take your list of 
+          em stylesheet-ready
+          |  hsl colors and leave, nothing else to see here. Well, maybe share it with your friends! 😊
         br
         p Don't paste in special characters, hieroglyphics, plans for building a rocket, or a greasy piece of your lunch.
         p 
           strong Just hex colors
-          |. 
-          strong Comma separated
+          |, 
+          strong comma separated
           |.
         p It accepts lower case and upper case, and you can even leave a space after the comma. Or three.
-        p It also accepts a single line list as well as values in multiple lines. You can omit the # if you'd like.
+        p It also accepts a single line list, as well as values in multiple lines. You can omit the # if you'd like.
         p This would work:
         pre #FADB5F, #F0B429, #CB6E17, #B44D12, #8D2B0B,
         p This would work too:
