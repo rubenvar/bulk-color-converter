@@ -2,6 +2,18 @@
 
 All notable changes to the _Bulk HSL Converter_ will be documented in this file.
 
+## [1.2.1] - 2020-12-13
+
+### Changed
+
+- Updated text in readme and `index.pug`.
+
+## [1.2.0] - 2020-12-13
+
+### Added
+
+- Added a **GitHub Action** so the app builds in GitHub on push. The build files also get copied to another repo ([my GitHub page](https://github.com/rubenvar/rubenvar.github.io)), where the app is published and usable.
+
 ## [1.1.0] - 2020-12-13
 
 ### Changed
