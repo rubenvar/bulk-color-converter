@@ -4,27 +4,21 @@
 
 Paste a list of hex color values, comma separated. Clic 'Convert!'.
 
-Done. 🚀 Take your list of _stylesheet-ready_ hsl colors and leave, nothing else to see here. Well, maybe share it with your friends too! 😊
+Done. 🚀 The app returns a list of _stylesheet-ready_ hsl colors 😊
 
-### More instructions
+### Details
 
-Don't paste in special characters, hieroglyphics, plans for building a rocket, or a greasy piece of your lunch.
-
-**Just hex colors**, **comma separated**.
-
-It accepts lower case and upper case, and you can even leave a space after the comma. Or three.
-
-It also accepts a single line list as well as values in multiple lines. You can omit the # if you'd like.
+It accepts lower case and upper case, and you can even leave a space after the comma. Or three. It also accepts a single line list as well as values in multiple lines. You can omit the # if you'd like.
 
 This would work:
 
-```
+```md
 #FADB5F, #F0B429, #CB6E17, #B44D12, #8D2B0B,
 ```
 
 This would work too:
 
-```
+```md
 #fffbea,
 #fff3c4,
 #fce588,
@@ -34,24 +28,29 @@ This would work too:
 
 This too:
 
-```
+```md
 #FfF, #F34, CE8,#Fb5, #429,    #dE1,#C6E, 44D, #82B,
 ```
 
 Even this would work:
 
-```
+```md
 fF7bEa,#fFD3c4,   fCe588,b5f, #7c8
 ,DEe91d,   aBcDeF,158, #dE3,
 ```
 
 _Please don't break it._
 
+## Nothing too fancy
+
+The app is just some html (pug), css (scss) and vanilla javascript, compiled with [Parcel](https://parceljs.org/).
+
+Also, the app is built + the resulting files copied to another repo ([my GitHub page](https://github.com/rubenvar/rubenvar.github.io)) on push, using a custom GitHub Action 🧙‍♂️.
+
 ## On the roadmap
 
 - Convert RGB too, both with % and without.
 - Accept alpha channels: hexa (#a2e4c5**dd**) and RGBA → hsla.
-
-## Nothing fancy here
-
-The app is just some html (pug), css (scss) and vanilla javascript, compiled with [Gulp](https://gulpjs.com/), as if we were still living in the 19th century.
+- Improve styling...
+- Maybe use newlines as separators even if there is no comma.
+- Display usefull error message to user if input incorrect (now only in console).
