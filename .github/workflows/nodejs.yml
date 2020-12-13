@@ -24,12 +24,13 @@ jobs:
           name: Save to public
           path: build
           retention-days: 5
-  
+
   push_to_outer:
     name: Push the thing
     needs: npm_build_job
     runs-on: ubuntu-latest
 
+    steps:
       - name: Get prev files
         uses: actions/download-artifact@v2
 
