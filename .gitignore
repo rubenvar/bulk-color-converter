@@ -1,4 +1,9 @@
-.DS_Store
 .vscode/
+.DS_Store
 node_modules/
+# parcel
+.cache/
+dist/
+build/
+#
 my_greatest_secrets/
