@@ -1,0 +1,46 @@
+name: Node.js CI
+
+on: [push]
+
+jobs:
+  npm_build_job:
+    name: Build the thing
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: "12.x"
+      - run: npm install
+      - run: npm run build --if-present
+
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: Save to public
+          path: build
+          retention-days: 5
+  
+  push_to_outer:
+    name: Push the thing
+    needs: npm_build_job
+    runs-on: ubuntu-latest
+
+      - name: Get prev files
+        uses: actions/download-artifact@v2
+
+      - name: Pushes files to another repo
+        uses: dmnemec/copy_file_to_another_repo_action@v1.0.4
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source_file: "build"
+          destination-repo: "rubenvar/rubenvar.github.io"
+          destination_folder: "bulk-color-converter"
+          user_email: "hey@rubenvara.io"
+          user_name: "rubenvar"
+          destination_branch: "main"
