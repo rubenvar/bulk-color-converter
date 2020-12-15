@@ -41,7 +41,7 @@ jobs:
         with:
           source_file: "/home/runner/work/bulk-color-converter/bulk-color-converter/build/*"
           destination_repo: "rubenvar/rubenvar.github.io"
-          destination_folder: "public/bulk-color-converter"
+          destination_folder: "bulk-color-converter"
           user_email: "hey@rubenvara.io"
           user_name: "rubenvar"
           destination_branch: "gh-pages"
