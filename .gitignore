@@ -6,4 +6,6 @@ node_modules/
 dist/
 build/
 #
+IDEAS.md
+DOCS.md
 my_greatest_secrets/
