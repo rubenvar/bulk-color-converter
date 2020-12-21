@@ -2,6 +2,12 @@
 
 All notable changes to the _Bulk HSL Converter_ will be documented in this file.
 
+## [1.2.2] - 2020-12-21
+
+### Changed
+
+- Updated GitHub action for the new working file structure in rubenvar.github.io.
+
 ## [1.2.1] - 2020-12-13
 
 ### Changed
