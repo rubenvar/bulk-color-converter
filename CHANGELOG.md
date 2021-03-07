@@ -2,6 +2,12 @@
 
 All notable changes to the _Bulk HSL Converter_ will be documented in this file.
 
+## [1.2.3] - 2021-03-07
+
+### Changed
+
+- Auto updated dependencies in GitHub.
+
 ## [1.2.2] - 2020-12-21
 
 ### Changed
