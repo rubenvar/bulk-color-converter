@@ -10,7 +10,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "parcel src/index.pug --open",
-    "build": "parcel build src/index.pug --out-dir build/ --public-url ./"
+    "build": "parcel build src/index.pug --out-dir build/ --public-url ./",
+    "preinstall": "npx npm-force-resolutions"
   },
   "keywords": [
     "color converter",
@@ -30,5 +31,8 @@
     "cssnano": "^4.1.10",
     "pug": "^3.0.2",
     "sass": "^1.30.0"
+  },
+  "resolutions": {
+    "@babel/preset-env": "7.13.8"
   }
 }
