@@ -9,7 +9,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "dev": "parcel src/index.pug --open",
+    "dev": "parcel serve src/index.pug --open",
     "build": "parcel build src/index.pug --dist-dir build/ --public-url ./"
   },
   "keywords": [
@@ -27,10 +27,8 @@
     "not dead"
   ],
   "devDependencies": {
-    "cssnano": "^4.1.10",
-    "parcel": "next",
-    "pug": "^3.0.2",
-    "sass": "^1.32.8"
-  
+    "@parcel/transformer-pug": "^2.0.0-beta.2",
+    "@parcel/transformer-sass": "^2.0.0-beta.2",
+    "parcel": "^2.0.0-beta.2"
   }
 }
