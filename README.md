@@ -10,6 +10,8 @@ Done. 🚀 The app returns a list of _stylesheet-ready_ hsl colors 😊
 
 It accepts lower case and upper case, and you can even leave a space after the comma. Or three. It also accepts a single line list as well as values in multiple lines. You can omit the # if you'd like.
 
+It also accepts hex color values with an alpha channel (#RRGGBBAA or #RGBA). It will convert them to hsla.
+
 This would work:
 
 ```md
@@ -35,8 +37,8 @@ This too:
 Even this would work:
 
 ```md
-fF7bEa,#fFD3c4,   fCe588,b5f, #7c8
-,DEe91d,   aBcDeF,158, #dE3,
+fF7bEa,#fFD3c4,   fCe588,b5f6, #7c8
+,DEe91dee,   aBcDeF,158, #dE32,
 ```
 
 _Please don't break it._
@@ -49,8 +51,8 @@ Also, the app is built + the resulting files copied to another repo ([my GitHub 
 
 ## On the roadmap
 
-- Convert RGB too, both with % and without.
-- Accept alpha channels: hexa (#a2e4c5**dd**) and RGBA → hsla.
-- Improve styling...
-- Maybe use newlines as separators even if there is no comma.
-- Display usefull error message to user if input incorrect (now only in console).
+- [ ] Convert RGB too, both with % and without.
+- [x] Accept alpha channels: hexa (#a2e4c5**dd**) and RGBA → hsla.
+- [ ] Improve styling...
+- [ ] Maybe use newlines as separators even if there is no comma.
+- [ ] Display useful error message to user if input incorrect (now only in console).
