@@ -9,6 +9,7 @@ All notable changes to the _Bulk HSL Converter_ will be documented in this file.
 - Add support for hex colors with an alpha channel (hex**a**, #rrggbbaa). It will return hsl**a** for the hexa codes used.
 - Modify regex and other code to test for length 4 and 8.
 - Result `textarea` changes border color to output colors.
+- Added GitHub link svg in top right corner.
 
 ### Changed
 
