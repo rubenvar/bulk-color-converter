@@ -2,6 +2,20 @@
 
 All notable changes to the _Bulk HSL Converter_ will be documented in this file.
 
+## [1.4.0] - 2021-03-22
+
+### Added
+
+- Add support for hex colors with an alpha channel (hex**a**, #rrggbbaa). It will return hsl**a** for the hexa codes used.
+- Modify regex and other code to test for length 4 and 8.
+- Result `textarea` changes border color to output colors.
+
+### Changed
+
+- Adapt readme and `index.pug` for hexa values.
+- `button` variable changed to `convert`.
+- Add `eslint` and `prettier` config.
+
 ## [1.3.0] - 2021-03-22
 
 ### Fixed
