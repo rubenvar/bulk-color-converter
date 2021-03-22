@@ -2,6 +2,12 @@
 
 All notable changes to the _Bulk HSL Converter_ will be documented in this file.
 
+## [1.3.0] - 2021-03-22
+
+### Fixed
+
+- Updated dependencies (Parcel to v2 + its plugins) to fix all build problems.
+
 ## [1.2.5] - 2021-03-22
 
 ### Changed
