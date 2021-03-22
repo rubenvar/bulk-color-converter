@@ -2,12 +2,17 @@
 
 All notable changes to the _Bulk HSL Converter_ will be documented in this file.
 
+## [1.2.5] - 2021-03-22
+
+### Changed
+
+- Changed package.json script to migrate to Parcel v2.
+
 ## [1.2.4] - 2021-03-22
 
 ### Changed
 
 - Added parcel in package.json to try to fix github build error.
-- Changed package.json script to migrate to Parcel v2.
 
 ## [1.2.3] - 2021-03-07
 
