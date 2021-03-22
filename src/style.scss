@@ -29,6 +29,10 @@ p {
   line-height: 1.55;
 }
 
+hr {
+  border-color: var(--secondary500);
+}
+
 .inner {
   padding: 0 30px;
 
@@ -66,6 +70,10 @@ main {
       background: white;
       padding: 12px;
       font-family: monospace;
+
+      &#result {
+        border: 3px solid transparent;
+      }
     }
 
     .buttons {
