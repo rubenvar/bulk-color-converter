@@ -2,6 +2,12 @@
 
 All notable changes to the _Bulk HSL Converter_ will be documented in this file.
 
+## [1.4.2] - 2022-03-22
+
+### Changed
+
+- Reverted GH action version (was not working 🤷‍♂️).
+
 ## [1.4.1] - 2022-03-22
 
 ### Changed
