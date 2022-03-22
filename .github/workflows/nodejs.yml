@@ -35,7 +35,7 @@ jobs:
         uses: actions/download-artifact@v2
 
       - name: Pushes files to another repo
-        uses: dmnemec/copy_file_to_another_repo_action@v1.0.4
+        uses: dmnemec/copy_file_to_another_repo_action@v1.1.1
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
