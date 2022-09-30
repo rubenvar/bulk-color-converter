@@ -4,6 +4,10 @@ All notable changes to the *Bulk HSL Converter* will be documented in this file.
 
 ## [Unreleased]
 
+## [1.5.5] - 2022-09-30
+
+- Try to fix GH action.
+
 ## [1.5.2] - 2022-09-30
 
 - Updated GH action versions.
