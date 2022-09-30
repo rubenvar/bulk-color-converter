@@ -11,10 +11,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Use Node.js 12.x
+      - name: Use Node.js 14.x
         uses: actions/setup-node@v1
         with:
-          node-version: "12.x"
+          node-version: "14.x"
       - run: npm install
       - run: npm run build --if-present
 
@@ -35,7 +35,7 @@ jobs:
         uses: actions/download-artifact@v2
 
       - name: Pushes files to another repo
-        uses: dmnemec/copy_file_to_another_repo_action@v1.0.4
+        uses: dmnemec/copy_file_to_another_repo_action@v1.1.1
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
