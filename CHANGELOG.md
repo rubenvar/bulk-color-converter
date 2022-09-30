@@ -4,6 +4,10 @@ All notable changes to the *Bulk HSL Converter* will be documented in this file.
 
 ## [Unreleased]
 
+## [1.5.2] - 2022-09-30
+
+- Updated GH action versions.
+
 ## [1.5.0] - 2022-09-30
 
 - Updated dependencies, removed all `eslint`/`prettier` dependencies.

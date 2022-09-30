@@ -9,19 +9,19 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
-      - name: Use Node.js 14.x
-        uses: actions/setup-node@v1
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v3
         with:
-          node-version: "14.x"
+          node-version: 16
       - run: npm install
       - run: npm run build --if-present
 
       - name: Save production artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
-          name: build
+          name: the-built-site-to-upload
           path: build
           retention-days: 5
 
@@ -32,9 +32,14 @@ jobs:
 
     steps:
       - name: Get prev files
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
+        with:
+          name: the-built-site-downloaded
 
-      - name: Pushes files to another repo
+      - name: Display structure of downloaded files
+        run: ls -R
+
+      - name: Push files to my GitHub site repo
         uses: dmnemec/copy_file_to_another_repo_action@v1.1.1
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
