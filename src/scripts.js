@@ -1,3 +1,5 @@
+import 'normalize.css';
+
 // formulas from https://css-tricks.com/converting-color-spaces-in-javascript/
 const userInput = document.getElementById('hex');
 const convert = document.getElementById('convert');

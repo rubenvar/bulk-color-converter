@@ -57,5 +57,8 @@
     "rules": {
       "no-console": "warn"
     }
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
   }
 }
