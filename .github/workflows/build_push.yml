@@ -1,4 +1,4 @@
-name: Node.js CI
+name: Build and Push
 
 on: [push]
 
@@ -44,7 +44,7 @@ jobs:
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
-          source_file: "/home/runner/work/bulk-color-converter/bulk-color-converter/*"
+          source_file: "*"
           destination_repo: "rubenvar/rubenvar.github.io"
           destination_folder: "docs/bulk-color-converter"
           user_email: "hey@rubenvara.io"
