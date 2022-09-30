@@ -21,7 +21,7 @@ jobs:
       - name: Save production artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: the-built-site-to-upload
+          name: the-built-site
           path: build
           retention-days: 5
 
@@ -34,7 +34,7 @@ jobs:
       - name: Get prev files
         uses: actions/download-artifact@v3
         with:
-          name: the-built-site-downloaded
+          name: the-built-site
 
       - name: Display structure of downloaded files
         run: ls -R
