@@ -1,6 +1,6 @@
 {
   "name": "bulk-color-converter",
-  "version": "1.5.3",
+  "version": "1.5.4",
   "description": "Paste a list of HEX color values and get a list of HSL color values",
   "author": "Rubén Vara <hey@rubenvara.io> (https://rubenvara.io)",
   "repository": {
